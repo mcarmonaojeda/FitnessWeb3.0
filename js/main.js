@@ -1,3 +1,21 @@
+
+function DameLaFechaHora() {
+    var hora = new Date()
+    var hrs = hora.getHours();
+    var min = hora.getMinutes();
+    var hoy = new Date();
+    var m = new Array();
+    var d = new Array()
+    var an= hoy.getYear();
+    m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+    m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+    m[6]="Julio";    m[7]="Agosto";   m[8]="Septiembre";
+    m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+    document.write(hoy.getDate());
+    document.write(" de ");
+    document.write(m[hoy.getMonth()]);
+  }
+
 $(function(){
     //Lettering
     $('.nombre-sitio').lettering();
@@ -48,15 +66,12 @@ $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 9},1500);
 
 //Cuenta regresiva
 
-$('.cuenta-regresiva').countdown('2017/10/07 09:00:00', function(event){
+$('.cuenta-regresiva').countdown('2018/12/03 16:30:00', function(event){
     $('#dias').html(event.strftime('%D'));
     $('#horas').html(event.strftime('%H'));
     $('#minutos').html(event.strftime('%M'));
     $('#segundos').html(event.strftime('%S'));
 });
-
-
-
 
 //API DE GOOGLE MAPS
 
@@ -77,8 +92,8 @@ function initMap() {
     */
   });
 
-  var contenido = '<h2>GDLWEBCAMP</h2>'+
-                    '<p>Del 10 al 12 de Diciembre</p>'+
+  var contenido = '<h2>FITNESSWEB</h2>'+
+                    '<p>Del 03 al 7 de Diciembre</p>'+
                     '<p>Visitanos!</p>'
 
   var informacion = new google.maps.InfoWindow({
@@ -88,7 +103,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: latLng,
     map: map,
-    title:'GDLWEBCAMP'
+    title:'FITNESSWEB'
   });
 
     marker.addListener('click',function(){
@@ -227,4 +242,3 @@ function initMap() {
         }
     });// DOM CONTENT LOADED
 })();
-
