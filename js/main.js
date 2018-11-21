@@ -79,8 +79,8 @@ $('.cuenta-regresiva').countdown('2018/12/03 16:30:00', function(event){
 
 function initMap() {
   var latLng = {
-      lat: 20.6772885,
-      lng: -103.3856328
+      lat: 20.7022653,
+      lng: -103.4719428
   }
     var map = new google.maps.Map(document.getElementById('mapa'), {
     'center': latLng,
