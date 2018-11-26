@@ -531,7 +531,7 @@ div.invitado p{
     font-family: 'Oswald', sans-serif;
     color: #fe4918;
     text-transform: uppercase;
-    -webkit-transition: all .3s ease-in-out;
+    -webkit-transition: all .3zs ease-in-out;
 }
 div.invitado:hover p{
     bottom: -80px;
@@ -636,6 +636,7 @@ div.tabla-precio p.numero{
     margin: 20px 0;
 }
 
+/*MAPA*/
 div.mapa{
     height: 420px;
     background-color: green;
